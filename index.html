@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <style>
+        /* CSS Styling - Directly within the HTML */
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            margin: 0; /* Remove default body margins */
+            padding: 20px; /* Add some padding around the content */
+        }
+
+        h1 {
+            color: navy;
+            text-align: center; /* Center the heading */
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5; /* Improve readability with line spacing */
+            margin-bottom: 20px; /* Add space below paragraphs */
+        }
+
+        .container {
+            max-width: 800px; /* Limit the width of the content */
+            margin: 0 auto; /* Center the container horizontally */
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px; /* Add rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+
+        img {
+            max-width: 100%; /* Ensure images don't overflow their container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra space below the image */
+            margin: 20px auto; /* Center the image and add margin */
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer; /* Change cursor on hover */
+            border-radius: 4px;
+          }
+
+        button:hover {
+            background-color: #3e8e41; /* Darker green on hover*/
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello, GitHub Pages!</h1>
+        <p>This is my single-file static website.  All the HTML, CSS, and JavaScript are contained within this one file.</p>
+        <p>This approach is convenient for very small sites, but for larger projects, it's generally better to separate your CSS and JavaScript into separate files for better organization and maintainability.</p>
+
+        <img src="https://via.placeholder.com/400x200" alt="Placeholder Image">
+        <!-- Use a placeholder image since we can't upload files directly in this response -->
+
+        <button onclick="showMessage()">Click Me!</button>
+    </div>
+
+    <script>
+        /* JavaScript - Directly within the HTML */
+        function showMessage() {
+            alert("You clicked the button!  This JavaScript is also in the index.html file.");
+        }
+
+        // You can add more JavaScript code here. For example, adding an event listener:
+        document.addEventListener('DOMContentLoaded', function() {
+           //Code to run after the DOM is fully loaded.
+           console.log('DOM fully loaded and parsed');
+        });
+
+
+    </script>
+
+</body>
+</html>
